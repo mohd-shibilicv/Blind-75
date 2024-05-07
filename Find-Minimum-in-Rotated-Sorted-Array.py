@@ -8,7 +8,7 @@ def find_min(nums):
             left = mid + 1
         else:
             right = mid
-        
+
     return nums[left]
 
 
