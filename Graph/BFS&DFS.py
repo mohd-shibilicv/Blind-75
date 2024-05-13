@@ -5,7 +5,7 @@ class Graph:
     def __init__(self, vertices):
         self.vertices = vertices
         self.adj_list = {vertex: [] for vertex in vertices}
-    
+
     def add_edge(self, u, v):
         self.adj_list[u].append(v)
         self.adj_list[v].append(u)

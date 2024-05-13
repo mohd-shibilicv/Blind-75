@@ -23,7 +23,7 @@ def clone_graph(graph):
     def dfs(node):
         if node in old_to_new:
             return old_to_new[node]
-        
+
         clone = Node(node)
         old_to_new[node] = clone
 

@@ -8,7 +8,7 @@ class ListNode:
 def invert_binary_tree(root):
     if not root:
         return None
-    
+
     invert_binary_tree(root.left)
     invert_binary_tree(root.right)
 
@@ -23,7 +23,7 @@ def inorder_traversal(root, result):
         inorder_traversal(root.left, result)
         result.append(root.val)
         inorder_traversal(root.right, result)
-    
+
     return result
 
 
