@@ -22,7 +22,7 @@ def three_sum(nums):
 
                 if nums[j] == nums[j - 1]:
                     j += 1
-    
+
     return res
 
 

@@ -8,7 +8,7 @@ def product_except_self(nums):
 
     for i in range(n - 2, -1, -1):
         suffix_prodcuts[i] = suffix_prodcuts[i + 1] * nums[i + 1]
-    
+
     result = [prefix_products[i] * suffix_prodcuts[i] for i in range(n)]
 
     return result
