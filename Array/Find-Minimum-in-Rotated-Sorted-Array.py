@@ -12,5 +12,5 @@ def find_min(nums):
     return nums[left]
 
 
-nums = [3,4,5,1,2]
+nums = [3, 4, 5, 1, 2]
 print(find_min(nums))

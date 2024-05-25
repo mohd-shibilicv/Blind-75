@@ -1,13 +1,11 @@
 def has_duplicates(nums):
-    counts_set = set()
 
     for num in nums:
-        if num in counts_set:
+        if nums.count(num) > 1:
             return True
-        counts_set.add(num)
     
     return False
 
 
-nums = [9,1,2,3,6,7,8,9]
+nums = [9,3,4]
 print(has_duplicates(nums))
