@@ -4,7 +4,7 @@ def climb_stairs_using_recursion(n: int) -> int:
     return climb_stairs_using_recursion(n - 1) + climb_stairs_using_recursion(n - 2)
 
 
-def climb_stairs_using_memoization(n: int, memo: dict[int, int] = {}) -> int:
+def climb_stairs_using_memoization(n: int, memo: dict = {}) -> int:
     if n == 0 or n == 1:
         return 1
 

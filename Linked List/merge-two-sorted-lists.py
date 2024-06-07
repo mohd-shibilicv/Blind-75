@@ -35,5 +35,6 @@ list2.next.next = ListNode(6)
 
 merged_list = merge_two_lists(list1, list2)
 while merged_list:
-    print(merged_list.value)
+    print(merged_list.value, end=" -> ")
     merged_list = merged_list.next
+print("None")

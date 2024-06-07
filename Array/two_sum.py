@@ -1,4 +1,4 @@
-def two_sum(nums, target):
+def two_sum(nums: list[int], target: int) -> (list | None):
     # Initialize a dictionary to store the complements of the elements in `nums` array
     complements_dict = {}
 
